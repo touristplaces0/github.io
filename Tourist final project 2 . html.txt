@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>Sipun project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 50vh;
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210907/pngtree-tourist-attraction-landmark-image_795645.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00FF00;
+      margin-top: 20px;
+      align-items: center;
+      font-size: 60px;
+    }
+
+    .center-controls {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      gap: 50px;
+    }
+
+    select, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    select {
+      background-color: #6E260E;
+      color: white;
+    }
+
+    button {
+      background-color: #A52A2A;
+      color: white;
+      cursor: pointer;
+    }
+.below-controls {
+  margin-top: 20px;
+}
+
+.below-controls button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4682B4; /* Steel Blue */
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+
+  </style>
+
+  <script>
+    function redirectToLink() {
+      const selection = document.getElementById("placeType").value;
+      if (selection) {
+        window.location.href = selection;
+      } else {
+        alert("Please select a service before searching.");
+      }
+    }
+function openExtraLink() {
+  window.open("https://www.google.com/maps/search/Tourist+places+near+me+", "_blank");
+}
+  </script>
+</head>
+<body>
+  <h1>Select City for Tourist palces</h1>
+
+  <div class="center-controls">
+    <select id="placeType">
+      <option value=""> - - - - - Select - - - - - </option>
+      <option value="https://maps.app.goo.gl/ZmBHzRAXLDyBcTse7">Angul</option>
+      <option value="https://maps.app.goo.gl/8iLMtEVm2duCy5aL6">Balasore </option>
+      <option value="https://maps.app.goo.gl/7HThAwxjTyC38iTb7">Bargarh</option>
+      <option value="https://maps.app.goo.gl/tS8pp3JjboyazFHe8">Bhadrak</option>
+      <option value="https://maps.app.goo.gl/3HcpKiUKjALTkEjS9">Bolangir</option>
+      <option value="https://maps.app.goo.gl/cAwbdEKEtTwdVwCS8">Boudh</option>
+      <option value="https://maps.app.goo.gl/kXFEx6SUF4oZgLbV9">Cuttack</option>
+      <option value="https://maps.app.goo.gl/fs8cvcSWb7y6sGNr7">Deogarh</option>
+      <option value="https://maps.app.goo.gl/HcEi3w8k6ybcHEpSA">Dhenkanal</option>
+      <option value="https://maps.app.goo.gl/HmzPdEodkgaX7Fd47">Gajapati</option>
+      <option value=https://maps.app.goo.gl/dgasVQDskFcT6tFb6">Ganjam</option>
+      <option value="https://maps.app.goo.gl/azZUj9JBPHMby1mo7">Jagatsinghpur</option>
+      <option value="https://maps.app.goo.gl/kriGjzAXY5w9QZ7Y7">Jajpur</option>
+      <option value="https://maps.app.goo.gl/apCY15BYw64kXSgY6">Jharsuguda</option>
+      <option value="https://maps.app.goo.gl/Dve1r1S9hsmA3q277">Kalahandi</option>
+      <option value="https://maps.app.goo.gl/3mFAPBwELSV8EmYi9">Kandhamal</option>
+      <option value="https://maps.app.goo.gl/HMBsSEad4UpwxWkW9">Kendrapara</option>
+      <option value="https://maps.app.goo.gl/UBWnvDjVyJTui9NU6">Keonjhar </option>
+      <option value="https://maps.app.goo.gl/kRJzSmy4FUX6hxBDA">Khordha</option>
+      <option value="https://maps.app.goo.gl/3SQ4J3YMR6mq23aw6">Koraput</option>
+      <option value="https://maps.app.goo.gl/CX2D8ga6967pxbhA8">Malkangiri</option>
+      <option value="https://maps.app.goo.gl/MTM693Ah6rNVLGHg7">Mayurbhanj</option>
+      <option value="https://maps.app.goo.gl/68VMTXfMc8kjNfQbA">Nabarangpur</option>
+      <option value="https://maps.app.goo.gl/ckfBmWPwMToRrFVc8">Nayagarh</option>
+      <option value="https://maps.app.goo.gl/QH3Lu5VgjDwM7bb29">Nuapada</option>
+      <option value="https://maps.app.goo.gl/mUFm2rHiVNPF8F868">Puri</option>
+      <option value="https://maps.app.goo.gl/bpbXBLQeYV4DTdcHA">Rayagada</option>
+      <option value="https://maps.app.goo.gl/fo7SZoG3V84rszn36">Sambalpur</option>
+      <option value="https://maps.app.goo.gl/sfoKNfwUWH85G1AR7">Sonepur</option>
+      <option value="https://maps.app.goo.gl/E35YS5f6nCb5v6pQ7">Sundargarh</option>
+    </select>
+
+    <button onclick="redirectToLink()">Search</button>
+  </div>
+ <div class="bottom-controls">
+ <button onclick="openExtraLink()">NearBy_Tourist_Places </button>
+  </div>
+</body>
+</html>
